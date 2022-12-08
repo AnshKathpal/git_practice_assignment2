@@ -1,21 +1,27 @@
 function checkprime(num){
-let count = 0;
-for(x=1;x<=num;x++){
-if(x%num==0){
-count++;
-   }
- }
-if(count == 2){
-   return true;
+
+   let count = 0;
+  for(x=1;x<=num;x++){
+    if(num%x==0){
+      count++;
+    }
   }
-else
+
+  if(count == 2){
+     return true;
+  }
+  else
   {
    return false;
    }
+ }
+ 
+  let ans = checkprime(4);
+  
+   if(ans == true){
+    console.log("Prime");
   }
-let ans = checkprime(4);
-if(ans == true){
-  console.log("Prime");
-}else {
-  console.log("Not Prime");
-}
+  else 
+  {
+   console.log("Not Prime");
+  }
